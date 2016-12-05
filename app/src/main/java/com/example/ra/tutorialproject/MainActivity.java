@@ -18,4 +18,9 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
+
+    public void thirdOnClick(View view) {
+        Intent intent = new Intent(MainActivity.this, ThirdActivity.class);
+        startActivity(intent);
+    }
 }

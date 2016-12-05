@@ -22,6 +22,12 @@
 
         </activity>
 
+        <activity android:name=".ThirdActivity"
+            android:label="@string/third_a_name"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+
     </application>
 
 </manifest>

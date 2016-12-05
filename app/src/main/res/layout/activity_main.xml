@@ -11,12 +11,23 @@
     tools:context="com.example.ra.tutorialproject.MainActivity">
 
     <Button
+        android:text="Start Third Activity"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginTop="69dp"
+        android:onClick="thirdOnClick"
+        android:id="@+id/button2" />
+
+    <Button
         android:text="Start Second Activity"
         android:layout_width="400px"
         android:layout_height="wrap_content"
         android:id="@+id/button"
         android:onClick="onClick"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="182dp" />
+        android:layout_marginTop="166dp" />
 </RelativeLayout>
