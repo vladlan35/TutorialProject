@@ -11,23 +11,34 @@
     tools:context="com.example.ra.tutorialproject.MainActivity">
 
     <Button
-        android:text="Start Third Activity"
-        android:layout_width="400px"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/button"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:layout_marginTop="69dp"
-        android:onClick="thirdOnClick"
-        android:id="@+id/button2" />
-
-    <Button
+        android:id="@+id/button1"
         android:text="Start Second Activity"
         android:layout_width="400px"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:onClick="onClick"
+        android:layout_marginTop="66dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="166dp" />
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Start Third Activity"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/button2"
+
+        android:layout_below="@+id/button1"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignStart="@+id/button1"
+        android:layout_marginTop="33dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:text="Start Fourth Activity"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_marginTop="40dp" />
 </RelativeLayout>
