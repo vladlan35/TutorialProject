@@ -3,4 +3,14 @@
     <string name="second_a_name"> SecondActivity</string>
     <string name="third_a_name">ThirdActivity</string>
     <string name="fourth_a_name"> FourthActivity</string>
+    <string name="fifth_a_name">FifthActivity</string>
+    <string-array name="days">
+        <item> Sunday </item>
+        <item> Monday </item>
+        <item> Tuesday </item>
+        <item> Wednesday </item>
+        <item> Thursday </item>
+        <item> Friday </item>
+        <item> Saturday </item>
+    </string-array>
 </resources>

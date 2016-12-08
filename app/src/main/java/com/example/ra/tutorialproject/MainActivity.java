@@ -16,11 +16,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button button1 = (Button) findViewById(R.id.button1);
         Button button2 = (Button) findViewById(R.id.button2);
         Button button3 = (Button) findViewById(R.id.button3);
-
+        Button button4 = (Button) findViewById(R.id.button4);
 
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
+        button4.setOnClickListener(this);
     }
 
    /* public void onClick(View view) {
@@ -52,6 +53,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(MainActivity.this,FourthActivity.class);
             } break;
 
+            case R.id.button4:{
+                intent = new Intent(MainActivity.this,FifthActivity.class);
+            } break;
             default: intent = new Intent(MainActivity.this,MainActivity.class);
         }
 
