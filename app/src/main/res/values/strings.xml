@@ -4,6 +4,7 @@
     <string name="third_a_name">ThirdActivity</string>
     <string name="fourth_a_name"> FourthActivity</string>
     <string name="fifth_a_name">FifthActivity</string>
+    <string name="sixth_a_name">SixthActivity</string>
     <string-array name="days">
         <item> Sunday </item>
         <item> Monday </item>
