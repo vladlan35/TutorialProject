@@ -1,6 +1,8 @@
 package com.example.ra.tutorialproject;
 
+import android.content.ClipData;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -11,19 +13,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- * Created by ra on 12/8/16.
- */
 
 public class SixthActivity extends AppCompatActivity {
 
@@ -42,6 +42,28 @@ public class SixthActivity extends AppCompatActivity {
 
         adapter =  new MyAdapter(this);
         mTextImage.setAdapter(adapter);
+
+        mTextImage.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(SixthActivity.this, SeventhActiviry.class);
+
+
+                MyObjects.get(i).text = "GOOOO";
+                setObjIT tempItem = MyObjects.get(i);
+
+                int expDataID = tempItem.imID;
+                String expDataText = tempItem.text;
+
+                intent.putExtra("item_id",expDataID);
+                intent.putExtra("item_text", expDataText);
+
+                startActivity(intent);
+
+
+            }
+        });
+
     }
 
     @Override
@@ -63,7 +85,7 @@ public class SixthActivity extends AppCompatActivity {
 
 
     private static class setObjIT{
-        public final String text;
+        public  String text;
         public final int  imID = R.drawable.myimage;
 
         public setObjIT(String text)
@@ -95,7 +117,7 @@ public class SixthActivity extends AppCompatActivity {
 
             }
 
-            ((EditText)convertView.findViewById(R.id.editText123)).setText(imageText.text);
+            ((TextView)convertView.findViewById(R.id.textView123654)).setText(imageText.text);
             ((ImageView)convertView.findViewById(R.id.imageView)).setImageResource(imageText.imID);
 
             return convertView;

@@ -46,6 +46,12 @@
 
     </activity>
 
+        <activity android:name=".SeventhActiviry"
+            android:label="@string/seventh_a_name"
+            android:parentActivityName=".SixthActivity"
+            >
+
+        </activity>
     </application>
 
 </manifest>

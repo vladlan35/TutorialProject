@@ -46,15 +46,6 @@
         android:layout_alignStart="@+id/button1" />
 
     <Button
-        android:id="@+id/button1"
-        android:text="Start Second Activity"
-        android:layout_width="400px"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="46dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
         android:text="Start Sixth Activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -65,4 +56,14 @@
         android:id="@+id/button5"
         android:layout_alignRight="@+id/button4"
         android:layout_alignEnd="@+id/button4" />
+
+    <Button
+        android:id="@+id/button1"
+        android:text="Start Second Activity"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
